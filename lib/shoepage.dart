@@ -159,23 +159,17 @@ class _ShoepageState extends State<Shoepage>{
                 ],
               ),
 
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                physics: BouncingScrollPhysics(),
-                child: Row(
-                  children: [
-                    Optionbutton1(size: "10"),
-                    Optionbutton1(size: "12.5"),
-                    Optionbutton1(size: "15"),
-                    Optionbutton1(size: "23"),
-                    Optionbutton1(size: "24.5"),
-                    
-                  ],
-                ),
-              ),
+            ButtonRow(listname: sizes,
+             height: 40,
+             whenselected: Colors.black,
+             whennotselected: Colors.transparent,
+             textselected: Colors.white,
+             textnotselected: Colors.black,
+             ),
+      
 
 
-              CustomAddToCartButton(),
+            CustomAddToCartButton(),
           
               
           

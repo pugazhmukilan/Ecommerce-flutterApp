@@ -154,22 +154,15 @@ class _FirstpageState extends State<Firstpage>{
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
           child: Container(
-            height: 40,
+            height: 50,
       
             
-            child: ListView.builder(
-              physics: BouncingScrollPhysics(),
-              scrollDirection: Axis.horizontal,
-              itemCount: items.length,
-              itemBuilder: (context, index) {
-                return Center(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    child: Optionbutton(ind: index),
-                  ),
-      
-                );
-              },
+            child: ButtonRow(listname:items,
+            height: 100,
+            whenselected: Colors.black,
+            whennotselected: const Color.fromARGB(255, 71, 71, 71),
+            textselected: Colors.white,
+            textnotselected: Colors.white,
             ),
           ),
         ),
