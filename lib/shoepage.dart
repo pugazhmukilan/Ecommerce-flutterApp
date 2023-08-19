@@ -6,6 +6,7 @@ class Shoepage extends StatefulWidget{
   late int ind1;
   late Color icolor;
   late Color ecolor;
+
   Shoepage({required this.ind1,required this.icolor,required this.ecolor});
   @override
   _ShoepageState createState() => _ShoepageState();
@@ -168,8 +169,7 @@ class _ShoepageState extends State<Shoepage>{
              ),
       
 
-
-            CustomAddToCartButton(),
+            CustomAddToCartButton(ind:widget.ind1),
           
               
           

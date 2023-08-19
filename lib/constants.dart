@@ -81,7 +81,10 @@ List <String> bannerimage = [
 
 ];
 
+List <int> cartlist = [
 
+
+];
 
 
 
@@ -452,6 +455,9 @@ class _Optionbutton1State extends State<Optionbutton1>{
 
 
 class CustomAddToCartButton extends StatefulWidget {
+
+  late int ind;
+  CustomAddToCartButton({required this.ind});
   @override
   _CustomAddToCartButtonState createState() => _CustomAddToCartButtonState();
 }
@@ -467,6 +473,13 @@ class _CustomAddToCartButtonState extends State<CustomAddToCartButton> {
         onTap: () {
           setState(() {
             _isPressed = !_isPressed;
+              if (cartlist.contains(widget.ind)){
+                
+              }
+              else{
+                cartlist.add(widget.ind);
+              }
+              print(cartlist);
           });
         },
         child: Container(
