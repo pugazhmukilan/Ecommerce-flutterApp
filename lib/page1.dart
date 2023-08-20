@@ -1,3 +1,4 @@
+import "package:e_commerce/cartpage.dart";
 import "package:e_commerce/constants.dart";
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
@@ -272,7 +273,11 @@ class _FirstpageState extends State<Firstpage>{
                 children: [
                   IconButton(onPressed: (){}, icon:Icon(CupertinoIcons.home,color: Color.fromARGB(255, 199, 199, 199),size: 30,)),
                   IconButton(onPressed: (){}, icon:Icon(CupertinoIcons.bell,color: Color.fromARGB(255, 199, 199, 199),size: 30,)),
-                  IconButton(onPressed: (){}, icon:Icon(CupertinoIcons.cart,color: Color.fromARGB(255, 199, 199, 199),size: 30,)),  
+                  IconButton(onPressed: (){
+                      Navigator.push(context,MaterialPageRoute(builder: (context)=>Cartpage()));
+
+
+                  }, icon:Icon(CupertinoIcons.cart,color: Color.fromARGB(255, 199, 199, 199),size: 30,)),
                 ],
               ),
             ),

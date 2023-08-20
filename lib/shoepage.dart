@@ -36,8 +36,7 @@ class _ShoepageState extends State<Shoepage>{
                 children: [
                   
                 CustomIconButton(icon: Icons.arrow_back,),
-                CustomIconButton(icon: Icons.list,),
-              
+                
           
                 ],
               ),
@@ -161,12 +160,12 @@ class _ShoepageState extends State<Shoepage>{
               ),
 
             ButtonRow(listname: sizes,
-             height: 40,
-             whenselected: Colors.black,
-             whennotselected: Colors.transparent,
-             textselected: Colors.white,
-             textnotselected: Colors.black,
-             ),
+            height: 40,
+            whenselected: Colors.black,
+            whennotselected: Colors.transparent,
+            textselected: Colors.white,
+            textnotselected: Colors.black,
+            ),
       
 
             CustomAddToCartButton(ind:widget.ind1),
